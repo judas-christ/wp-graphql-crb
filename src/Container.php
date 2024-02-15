@@ -17,7 +17,9 @@ use WPGraphQL\Model\Post;
 use WPGraphQL\Model\Term;
 use WPGraphQL\Model\User;
 use WPGraphQL\Model\Comment;
+use \AllowDynamicProperties;
 
+#[AllowDynamicProperties]
 class Container
 {
   private static $is_first_time = true;

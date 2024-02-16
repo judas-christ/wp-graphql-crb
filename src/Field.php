@@ -15,6 +15,11 @@ class Field
    */
   private $field;
 
+  /**
+   * @var string
+   */
+  public $recursiveType;
+
   private static $blacklisted_fields = ['html', 'separator'];
 
   public function __construct(CrbField $field, String $recursiveType)

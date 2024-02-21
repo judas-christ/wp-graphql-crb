@@ -17,12 +17,18 @@ use WPGraphQL\Model\Post;
 use WPGraphQL\Model\Term;
 use WPGraphQL\Model\User;
 use WPGraphQL\Model\Comment;
-
 class Container
 {
   private static $is_first_time = true;
 
   private static $is_first_time_theme_options = true;
+
+  public CrbContainer $container;
+
+  /**
+   * @var Field[]
+   */
+  public array $fields;
 
   public function __construct(CrbContainer $container)
   {
